@@ -1,0 +1,383 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+/***********start my framework*******************/
+.container {
+  width: 1200px;
+  margin: auto;
+  position: relative; }
+
+.hidden {
+  display: none; }
+
+.table {
+  height: 100%;
+  display: table; }
+
+.table-row {
+  display: table-cell;
+  vertical-align: middle; }
+
+.text-center {
+  text-align: center; }
+
+.upper {
+  text-transform: uppercase;
+  font-weight: bolder; }
+
+.maincolor {
+  color: #ffb142; }
+
+.mainback {
+  background-color: #ffb142; }
+
+.overley {
+  background-color: rgba(49, 55, 61, 0.9);
+  width: 100%;
+  height: 100%; }
+
+.header, .subscribe, .test, .contact {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.header .btn button, .featuers .box i, .work .show-more, .work .items-box .item, .work .items-box .item .over button, .team .our-team .mumber img, .team .our-team .mumber .icons i {
+  -webkit-transition: all .9s ease-in-out;
+  -moz-transition: all .9s ease-in-out;
+  -o-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out; }
+
+/***********start my header*******************/
+.header {
+  background-image: url(../images/header_stock.png);
+  color: white;
+  text-transform: capitalize; }
+  .header .navbar {
+    overflow: hidden;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .header .navbar .logo {
+      font-size: 25px; }
+    .header .navbar .links {
+      float: right; }
+      .header .navbar .links i {
+        margin-left: 5px; }
+  .header .intro h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800; }
+  .header .intro p {
+    margin: 5px 0 40px;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #e2e2e2; }
+  .header .btn button {
+    background: transparent;
+    width: 180px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 8px;
+    border: 1px solid #909090;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    color: white; }
+    .header .btn button:hover {
+      background-color: #ffb142;
+      border: 1px solid #ffb142; }
+  .header .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+    .header .arrow i {
+      border: 2px solid #7b7b7b;
+      height: 45px;
+      width: 42px;
+      line-height: 45px;
+      margin-bottom: 60px;
+      border-radius: 50%;
+      cursor: pointer; }
+
+/*********************start featuers********************/
+.featuers {
+  padding: 80px 0;
+  overflow: hidden; }
+  .featuers .box {
+    float: left;
+    width: 22%;
+    text-align: center;
+    margin-right: 4%; }
+    .featuers .box:last-child {
+      margin-right: 0; }
+    .featuers .box i {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      color: #ffb142; }
+      .featuers .box i:hover {
+        background-color: #ffb142;
+        border: 1px solid #ffb142;
+        color: #fff; }
+    .featuers .box h3 {
+      color: #505050;
+      font-weight: normal; }
+    .featuers .box p {
+      line-height: 1.5;
+      color: #888; }
+
+/******************start subscribe******************/
+.subscribe {
+  background-image: url(../images/subscribe.png); }
+  .subscribe form {
+    width: 700px;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif; }
+    .subscribe form input {
+      padding: 10px;
+      width: 320px;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: capitalize;
+      border: none;
+      border-radius: 10px;
+      margin-right: 20px; }
+    .subscribe form button {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #ffb142;
+      width: 200px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      color: white; }
+
+/***************start ourwork*********************/
+.work {
+  padding: 50px; }
+  .work h1 {
+    font-size: 35px; }
+  .work h1 ~ p {
+    line-height: 2;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #666; }
+  .work .show-more {
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+    border: 1px solid #CCC;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #555; }
+    .work .show-more:hover {
+      background-color: #ffb142;
+      border: 1px solid #ffb142;
+      color: white; }
+  .work .items-box {
+    overflow: hidden; }
+    .work .items-box .item {
+      float: left;
+      width: 31%;
+      height: 398px;
+      overflow: hidden;
+      margin-right: 2%;
+      margin-bottom: 2%;
+      border-radius: 15px;
+      position: relative; }
+      .work .items-box .item .over {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffb142;
+        color: white;
+        display: none; }
+        .work .items-box .item .over h2 {
+          margin-top: 80px;
+          font-weight: bold;
+          font-size: 25px; }
+        .work .items-box .item .over p {
+          padding: 15px;
+          font-size: 14px;
+          line-height: 2; }
+        .work .items-box .item .over button {
+          font-family: 'Open Sans', sans-serif;
+          background: transparent;
+          border: 1px solid #fff;
+          width: 150px;
+          padding: 10px;
+          border-radius: 10px;
+          margin-top: 20px;
+          color: #fff; }
+          .work .items-box .item .over button:hover {
+            background-color: white;
+            color: #ffb142; }
+      .work .items-box .item:hover .over {
+        display: block; }
+
+/********************start test*******************/
+.test {
+  background-image: url(../images/testimonials.png); }
+  .test .client {
+    padding: 50px 0;
+    color: #fff; }
+    .test .client img {
+      border-radius: 50%; }
+    .test .client p {
+      line-height: 2;
+      margin: 20px 0;
+      font-style: italic; }
+  .test .fa-chevron-left {
+    position: absolute;
+    top: 60%;
+    color: #999;
+    cursor: pointer;
+    left: 0; }
+  .test .fa-chevron-right {
+    position: absolute;
+    top: 60%;
+    color: #999;
+    cursor: pointer;
+    right: 0; }
+  .test .fa-chevron-left:hover {
+    color: #ffb142; }
+  .test .fa-chevron-right:hover {
+    color: #ffb142; }
+
+/****************start team**********************/
+.team {
+  padding: 50px 0; }
+  .team h1 {
+    font-size: 35px; }
+  .team h1 ~ p {
+    line-height: 2;
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #666; }
+  .team .our-team {
+    overflow: hidden; }
+    .team .our-team .mumber {
+      float: left;
+      width: 24%;
+      margin-left: 1%;
+      color: #888; }
+      .team .our-team .mumber:hover {
+        color: #555; }
+      .team .our-team .mumber:hover .fa-facebook {
+        background: #3b5998; }
+      .team .our-team .mumber:hover .fa-twitter {
+        background: #1da1f2; }
+      .team .our-team .mumber:hover .fa-google-plus {
+        background: #ffb142; }
+      .team .our-team .mumber:hover img {
+        filter: none;
+        -webkt-filter: none; }
+      .team .our-team .mumber img {
+        width: 265px;
+        height: 290px;
+        filter: gray;
+        filter: grayscale(1); }
+      .team .our-team .mumber .icons i {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        color: #fff;
+        border-radius: 50%;
+        background: #888; }
+
+/***********************start contact*****************/
+.contact {
+  background-image: url(../images/city.png); }
+  .contact .overley {
+    padding: 50px 0;
+    color: #fff; }
+  .contact h1 {
+    font-size: 35px; }
+  .contact p {
+    margin: 30px 0 50px; }
+  .contact form {
+    width: 700px;
+    margin: auto;
+    overflow: hidden; }
+    .contact form input {
+      background-color: transparent;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: capitalize;
+      width: 48%;
+      border-radius: 10px;
+      border: 1px solid #999;
+      padding: 0 10px;
+      height: 40px;
+      line-height: 40px; }
+      .contact form input[type="text"] {
+        float: left; }
+      .contact form input[type="email"] {
+        float: right; }
+    .contact form textarea {
+      background-color: transparent;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: capitalize;
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 10px;
+      padding: 10px;
+      border: 1px solid #999;
+      height: 150px; }
+    .contact form .imfo {
+      overflow: hidden; }
+      .contact form .imfo button {
+        float: left;
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 20px;
+        background-color: #ffb142;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+        color: white;
+        border: none;
+        font-weight: normal; }
+    .contact form .icons {
+      float: right;
+      margin-top: 30px; }
+      .contact form .icons i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%; }
+      .contact form .icons .fa-facebook {
+        background: #3b5998; }
+      .contact form .icons .fa-twitter {
+        background: #1da1f2; }
+      .contact form .icons .fa-google-plus {
+        background: #ffb142; }
+
+/*****************start footer*******************/
+.footer {
+  background-color: #3b434c;
+  overflow: hidden;
+  padding: 30px 0;
+  color: #fff;
+  font-size: 10px; }
+  .footer .cop {
+    float: left;
+    font-weight: normal; }
+  .footer .cpoy {
+    float: right;
+    font-weight: normal; }
+
+/*# sourceMappingURL=style.css.map */
